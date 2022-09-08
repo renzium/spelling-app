@@ -13,8 +13,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='text-red-100'>
-        <div className="bg-red-100 text-center">hello</div>
+      <main >
+        
         <MyHome/>
         
       </main>
