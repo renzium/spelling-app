@@ -1,8 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "museo-sans-rounded",sans-serif;
+  src: url("../assets/fonts/MuseoSansRounded100.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
+ font-family: "museo-sans-rounded";
  
 }
 
@@ -13,4 +23,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.random{
+background: #90cdf400;
 }
