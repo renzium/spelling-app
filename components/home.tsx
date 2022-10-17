@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import data from "../assets/data.json"
 import Speaker from "./Say"
 
-export default function home() {
+export default function Home() {
   const router = useRouter();
   const toggle = () => {
     let randomNum = Math.floor(Math.random() * 54)
