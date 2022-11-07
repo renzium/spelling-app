@@ -2,6 +2,7 @@ import {useState} from "react"
 import data from "../assets/data.json"
 import { useRouter } from "next/router";
 
+const num = data.length;
 
 export async function getStaticPaths() {
   const paths = data.map((el) => {
@@ -34,7 +35,7 @@ export default function Word({word, count }: any) {
   const router = useRouter()
 
   const toggle = () => {
-    let randomNum = Math.floor(Math.random() * 54)
+    let randomNum = Math.floor(Math.random() * num)
     setIndex(randomNum)
 router.push(`/${data[randomNum]}`)
 
